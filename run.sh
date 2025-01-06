@@ -91,7 +91,7 @@ vagrantParams="--nodes-file ./nodes --username root --ssh-private-key=./resource
 dockerBaseCommand="docker exec -it -w '/jepsen' jepsen-control lein trampoline run test"
 dockerParams="--nodes-file ./nodes"
 vmpoolBaseCommand="lein trampoline run test"
-vmpoolParams="--nodes-file ./nodes --username root --ssh-private-key=./resources/my.key"
+vmpoolParams="--nodes-file ./nodes --username root --password couchbase --ssh-private-key=./resources/my.key"
 packageParam="--package $PACKAGE"
 pass=0
 fail=0
